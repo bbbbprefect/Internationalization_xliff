@@ -1,0 +1,12 @@
+file1独有的数据：
+index 94f342b..e8a165f 100644
+index 1e3b88d..3bf9521 100644
+@@ -29,6 +29,16 @@ - (void)viewDidLoad {
++    self.btn3 = [[UIButton alloc]initWithFrame:CGRectMake(60, 300, 80, 40)];
++    [self.btn3 setTitle:NSLocalizedString(@"明天", @"明天") forState:UIControlStateNormal];
++    self.btn3.backgroundColor = [UIColor blueColor];
++    [self.view addSubview:self.btn3];
+file2独有的数据：
+index 94f342b..732844e 100644
+index 1e3b88d..aa44fd5 100644
+@@ -29,6 +29,11 @@ - (void)viewDidLoad {

@@ -1,0 +1,27 @@
+diff --git a/InternDemo/InternDemo.xcodeproj/project.xcworkspace/xcuserdata/zhaoxiang.xcuserdatad/UserInterfaceState.xcuserstate b/InternDemo/InternDemo.xcodeproj/project.xcworkspace/xcuserdata/zhaoxiang.xcuserdatad/UserInterfaceState.xcuserstate
+index 94f342b..e8a165f 100644
+Binary files a/InternDemo/InternDemo.xcodeproj/project.xcworkspace/xcuserdata/zhaoxiang.xcuserdatad/UserInterfaceState.xcuserstate and b/InternDemo/InternDemo.xcodeproj/project.xcworkspace/xcuserdata/zhaoxiang.xcuserdatad/UserInterfaceState.xcuserstate differ
+diff --git a/InternDemo/InternDemo/ViewController.m b/InternDemo/InternDemo/ViewController.m
+index 1e3b88d..3bf9521 100644
+--- a/InternDemo/InternDemo/ViewController.m
++++ b/InternDemo/InternDemo/ViewController.m
+@@ -29,6 +29,16 @@ - (void)viewDidLoad {
+     [self.btn setTitle:NSLocalizedString(@"首页", @"首页") forState:UIControlStateNormal];
+     self.btn.backgroundColor = [UIColor blueColor];
+     [self.view addSubview:self.btn];
++    
++    self.btn2 = [[UIButton alloc]initWithFrame:CGRectMake(60, 200, 80, 40)];
++    [self.btn2 setTitle:NSLocalizedString(@"今天", @"今天") forState:UIControlStateNormal];
++    self.btn2.backgroundColor = [UIColor blueColor];
++    [self.view addSubview:self.btn2];
++    
++    self.btn3 = [[UIButton alloc]initWithFrame:CGRectMake(60, 300, 80, 40)];
++    [self.btn3 setTitle:NSLocalizedString(@"明天", @"明天") forState:UIControlStateNormal];
++    self.btn3.backgroundColor = [UIColor blueColor];
++    [self.view addSubview:self.btn3];
+ }
+ 
+ 
+diff --git a/InternDemo/InternDemo/ja.lproj/Localizable.strings b/InternDemo/InternDemo/ja.lproj/Localizable.strings
+index 42b2a99..b20bd18 100644
+Binary files a/InternDemo/InternDemo/ja.lproj/Localizable.strings and b/InternDemo/InternDemo/ja.lproj/Localizable.strings differ
